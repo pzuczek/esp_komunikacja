@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "../blink",
+    },
+    {
+      "name": "esp_blink",
+      "path": "../blink/esp_blink",
+    },
+    {
+      "name": "esp_wifi_test",
+      "path": "../esp_wifi_test",
+    },
+    {
+      "name": "esp_mqtt_test",
+      "path": ".",
+    },
+    {
+      "name": "button",
+      "path": "../button",
+    },
+  ],
+  "settings": {},
+}
