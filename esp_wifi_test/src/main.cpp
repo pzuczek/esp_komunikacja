@@ -3,7 +3,7 @@
 #include <WebServer.h> // Wbudowana biblioteka do tworzenia serwera WWW
 
 // --- KONFIGURACJA WI-FI ---
-const char* ssid = "1509B"; 
+const char* ssid = "1509B";  
 const char* password = "17485524";
 
 // Tworzymy obiekt serwera nasłuchującego na standardowym porcie 80

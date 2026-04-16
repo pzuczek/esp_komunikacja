@@ -3,20 +3,21 @@
 #include <PubSubClient.h>
 
 // --- KONFIGURACJA PINÓW ---
-#define BUTTON_PIN 4
+#define BUTTON_PIN 4 // do tefo pinu trzeba wpiąć przycisk
 
 // --- KONFIGURACJA SIECI I MQTT ---
-const char* ssid = "DWR-921-7367C7"; // Z
+const char* ssid = "DWR-921-7367C7"; // ZMIEŃ NA SWOJE
 const char* password = "aRCuewvq"; // ZMIEŃ NA SWOJE HASŁO!
 
 // --- KONFIGURACJA MQTT ---
-const char* mqtt_server = "192.168.0.50"; // Publiczny serwer testowy
-const char* topic_publish = "moj/test"; // ZMIEŃ NA SWÓJ UNIKALNY TEMAT!
+const char* mqtt_server = "192.168.0.50"; // ip serewera sprawdza ipconfig na kompie który port to rj któtej użyłes
+const char* topic_publish = "moj/test"; // to se ustawiasz
 
 WiFiClient espClient;
 PubSubClient client(espClient);
 
 // --- ZMIENNE PRZERWANIA (VOLATILE) ---
+// aktualnie wciśniecie rpzysku wywowłuje przerwanie, docelowo bedzie cykliczen przerwaie od komuniakcji
 volatile bool buttonPressed = false;
 volatile unsigned long lastInterruptT ime = 0;
 const unsigned long debounceDelay = 50; 
