@@ -19,7 +19,7 @@ PubSubClient client(espClient);
 // --- ZMIENNE PRZERWANIA (VOLATILE) ---
 // aktualnie wciśniecie rpzysku wywowłuje przerwanie, docelowo bedzie cykliczen przerwaie od komuniakcji
 volatile bool buttonPressed = false;
-volatile unsigned long lastInterruptT ime = 0;
+volatile unsigned long lastInterruptTime = 0;
 const unsigned long debounceDelay = 50; 
 
 // --- FUNKCJA PRZERWANIA (ISR) ---
